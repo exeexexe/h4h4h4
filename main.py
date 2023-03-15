@@ -1,8 +1,10 @@
-q = input("Какой прием пищи ")
-
-if q == "Завтрак":
-     print("Вам кашка")
-elif q == ("Плотный"):
-    print("Кушай плов")
-else:
-    print("Котлетка и пюре - ваш выбор")
+def mark_test(otm):
+    return otm > 50
+rez = int(input("Сколько учеников? "))
+for i in range(rez):
+    otmm = int(input("Сколько баллов "))
+    result = mark_test(otmm)
+    if result:
+        print("Ура вы остаетесь")
+    else:
+        print("Bye-Bye")
